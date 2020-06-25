@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Dimensions } from 'react-native';
 import Dots from './dots';
+import { isPortrait } from './utils';
 
-const { width } = Dimensions.get('window');
+let { width, height } = Dimensions.get('window');
 
 export default class ViewSlider extends Component {
   constructor() {
     super();
 
     this.slidesCount = 0;
+    isPortrait() ? null : width = [height, height = width][0];
   }
 
   state = {
