@@ -110,7 +110,7 @@ export default class ViewSlider extends Component {
           <Dots
             activeColor={dotActiveColor}
             inactiveColor={dotInactiveColor}
-            count={slidesCount}
+            count={this.slidesCount}
             activeDot={step}
             containerStyle={dotsContainerStyle}
           />
