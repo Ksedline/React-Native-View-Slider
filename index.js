@@ -106,7 +106,7 @@ export default class ViewSlider extends Component {
         >
           {this.props.renderSlides}
         </ScrollView>
-        {dots && (
+        {dots && this.slidesCount > 0 && (
           <Dots
             activeColor={dotActiveColor}
             inactiveColor={dotInactiveColor}
